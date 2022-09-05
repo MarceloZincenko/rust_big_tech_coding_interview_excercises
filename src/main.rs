@@ -14,6 +14,9 @@ fn main() {
     excercises::leetcode_347_top_k_frequent_elements();
     excercises::leetcode_3238_product_of_array_except_self();
 
+    //Permutations
+    excercises::leetcode_17_letter_combination();
+
     //Two pointers
     excercises::leetcode_5_longest_palindromic_substring();
     excercises::leetcode_11_container_with_most_water();
@@ -27,8 +30,16 @@ fn main() {
     //Stack
     excercises::leetcode_739_daily_temperatures();
 
+    
     //Search
 
     //ALGORITHMS
+    //binary search
     algorithms::binary_search();
+    algorithms::binary_search_first_greater_than();
+    algorithms::binary_search_greater_or_equal_than();
+    algorithms::binary_search_first_lower_than();
+    algorithms::binary_search_lower_or_equal_than();
+
+
 }

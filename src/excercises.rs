@@ -1,4 +1,5 @@
 mod array_hashes;
+mod permutations;
 mod two_pointers;
 mod rolling_window;
 mod stack;
@@ -95,6 +96,14 @@ pub fn leetcode_128_longest_consecutive_sequence(){
     let nums:Vec<i64>=vec![0,3,7,2,5,8,4,6,0,1];
     let result:i64=array_hashes::longest_consecutive_sequence(&nums);
     let expected:i64=9;
+    assert_eq!(result, expected);
+}
+
+//PERMUTATIONS
+pub fn leetcode_17_letter_combination(){
+    let digits:String=String::from("23");
+    let result:Vec<String>=permutations::letter_combination(&digits);
+    let expected:Vec<String>=vec![String::from("ad"),String::from("ae"),String::from("af"),String::from("bd"),String::from("be"),String::from("bf"),String::from("cd"),String::from("ce"),String::from("cf")];
     assert_eq!(result, expected);
 }
 

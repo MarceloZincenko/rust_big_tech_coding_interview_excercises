@@ -88,7 +88,7 @@ pub fn group_anagrams(strs:&Vec<String>)->Option<Vec<Vec<String>>>{
     
     let mut result:Vec<Vec<String>>=vec![];
     
-    for (key,value) in hash_group{
+    for (_key,value) in hash_group{
         result.push(value);
     }
     
