@@ -24,13 +24,15 @@ fn main() {
     excercises::leetcode_125_valid_palindrome();
     excercises::leetcode_167_two_sum_ii();
 
-    //Rolling Window
+    //Sliding Window
+    excercises::leetcode_3_longest_substring_without_repeating_characters();
     excercises::leetcode_14_longest_common_prefix();
-
+    excercises::leetcode_121_best_time_to_buy_and_sell_stock();
+    excercises::leetcode_424_longest_repeating_character_replacement();
+    
     //Stack
     excercises::leetcode_739_daily_temperatures();
 
-    
     //Search
 
     //ALGORITHMS

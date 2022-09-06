@@ -1,7 +1,7 @@
 mod array_hashes;
 mod permutations;
 mod two_pointers;
-mod rolling_window;
+mod sliding_window;
 mod stack;
 
 //ARRAY AND HASHES
@@ -156,14 +156,35 @@ pub fn leetcode_5_longest_palindromic_substring(){
     assert_eq!(result, expected);
 }
 
-//ROLLING WINDOW
+//SLIDING WINDOW
 pub fn leetcode_14_longest_common_prefix(){
     let strs:Vec<String>=vec![String::from("flower"),String::from("flow"),String::from("fligth")];
-    let result:String=rolling_window::longest_common_prefix(&strs);
+    let result:String=sliding_window::longest_common_prefix(&strs);
     let expected:String=String::from("fl");
     assert_eq!(result, expected);
 }
 
+pub fn leetcode_121_best_time_to_buy_and_sell_stock(){
+    let prices:Vec<i64>=vec![7,1,5,3,6,4];
+    let result:i64=sliding_window::best_time_to_buy_and_sell_stock(&prices);
+    let expected:i64=5;
+    assert_eq!(result,expected);
+}
+
+pub fn leetcode_3_longest_substring_without_repeating_characters(){
+    let s:String= "abcabcbb".to_string();
+    let result:i64=sliding_window::longest_substring_without_repeating_characters(&s);
+    let expected:i64=3;
+    assert_eq!(result,expected);
+}
+
+pub fn leetcode_424_longest_repeating_character_replacement(){
+    let s:String= "AABABBA".to_string();
+    let k:i64=1;
+    let result:i64=sliding_window::longest_repeating_character_replacemen(&s,k);
+    let expected:i64=4;
+    assert_eq!(result,expected);
+}
 
 //STACK
 pub fn leetcode_739_daily_temperatures(){
