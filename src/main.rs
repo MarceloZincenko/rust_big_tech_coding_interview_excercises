@@ -29,6 +29,9 @@ fn main() {
     excercises::leetcode_14_longest_common_prefix();
     excercises::leetcode_121_best_time_to_buy_and_sell_stock();
     excercises::leetcode_424_longest_repeating_character_replacement();
+    excercises::leetcode_567_permutation_in_string();
+    excercises::leetcode_239_sliding_window_maximum();
+    excercises::local_minimum();
     
     //Stack
     excercises::leetcode_739_daily_temperatures();

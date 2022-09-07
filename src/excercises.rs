@@ -186,6 +186,31 @@ pub fn leetcode_424_longest_repeating_character_replacement(){
     assert_eq!(result,expected);
 }
 
+pub fn leetcode_567_permutation_in_string(){
+    let s1:String="ab".to_string();
+    let s2:String="eidbaooo".to_string();
+    let result:bool=sliding_window::permutation_in_string(&s1, &s2);
+    let expected:bool=true;
+    assert_eq!(result,expected);
+}
+
+pub fn leetcode_239_sliding_window_maximum(){
+    let nums:Vec<i64>=vec![1,3,-1,-3,5,3,6,7];
+    let k:i64=3;
+    let result:Vec<i64>=sliding_window::sliding_window_maximum(&nums,&k);
+    let expected:Vec<i64>=vec![3,3,5,5,6,7];
+    assert_eq!(result,expected);
+}
+
+pub fn local_minimum(){
+    let nums:Vec<i64>=vec![1,3,-1,-3,5,3,6,7];
+    let k:i64=3;
+    let result:Vec<i64>=sliding_window::local_minimum(&nums,&k);
+    let expected:Vec<i64>=vec![-1,-3,-3,-3,3,3];
+    assert_eq!(result,expected);
+}
+
+
 //STACK
 pub fn leetcode_739_daily_temperatures(){
     //5- Daily temperatures
