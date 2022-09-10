@@ -34,6 +34,8 @@ fn main() {
     excercises::local_minimum();
     
     //Stack
+    excercises::leetcode_20_valid_parentheses();
+    excercises::leetcode_150_evaluate_reverse_polish_notation();
     excercises::leetcode_739_daily_temperatures();
 
     //Search

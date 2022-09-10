@@ -212,10 +212,23 @@ pub fn local_minimum(){
 
 
 //STACK
+pub fn leetcode_20_valid_parentheses(){
+    let chars:Vec<char>=vec!['(','(',')','[',']','{','}',')','[','(',')','[',']','{','}',']','{','(',')','[',']','{','}','}'];
+    let result:bool=stack::valid_parentheses(&chars);
+    let expected:bool=true;
+    assert_eq!(result,expected);
+}
+
 pub fn leetcode_739_daily_temperatures(){
-    //5- Daily temperatures
     let temperatures:Vec<i64>=vec![73,74,75,71,69,72,76,73];
     let result:Vec<i64>=stack::daily_temperatures(&temperatures);
     let expected:Vec<i64>=vec![1,1,4,2,1,1,0,0];
+    assert_eq!(result, expected);
+}
+
+pub fn leetcode_150_evaluate_reverse_polish_notation(){
+    let temperatures:Vec<String>=vec!["10".to_string(),"6".to_string(),"9".to_string(),"3".to_string(),"+".to_string(),"-11".to_string(),"*".to_string(),"/".to_string(),"*".to_string(),"17".to_string(),"+".to_string(),"5".to_string(),"+".to_string()];
+    let result:i64=stack::evaluate_reverse_polish_notation(&temperatures);
+    let expected:i64=22;
     assert_eq!(result, expected);
 }
