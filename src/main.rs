@@ -14,7 +14,7 @@ fn main() {
     excercises::leetcode_347_top_k_frequent_elements();
     excercises::leetcode_3238_product_of_array_except_self();
 
-    //Permutations
+    //backtracking
     excercises::leetcode_17_letter_combination();
 
     //Two pointers
@@ -38,7 +38,11 @@ fn main() {
     excercises::leetcode_150_evaluate_reverse_polish_notation();
     excercises::leetcode_739_daily_temperatures();
 
-    //Search
+    //Binary Search
+    excercises::leetcode_33_search_in_rotated_sorted_array();
+    excercises::leetcode_74_search_a_2d_matrix();
+    excercises::leetcode_704_binary_search();
+    excercises::leetcode_875_koko_eating_bananas();
 
     //ALGORITHMS
     //binary search

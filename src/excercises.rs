@@ -1,8 +1,9 @@
 mod array_hashes;
-mod permutations;
+mod backtracking;
 mod two_pointers;
 mod sliding_window;
 mod stack;
+mod binary_search;
 
 //ARRAY AND HASHES
 pub fn leetcode_217_contains_duplicates(){
@@ -99,10 +100,10 @@ pub fn leetcode_128_longest_consecutive_sequence(){
     assert_eq!(result, expected);
 }
 
-//PERMUTATIONS
+//BACKTRACKING
 pub fn leetcode_17_letter_combination(){
     let digits:String=String::from("23");
-    let result:Vec<String>=permutations::letter_combination(&digits);
+    let result:Vec<String>=backtracking::letter_combination(&digits);
     let expected:Vec<String>=vec![String::from("ad"),String::from("ae"),String::from("af"),String::from("bd"),String::from("be"),String::from("bf"),String::from("cd"),String::from("ce"),String::from("cf")];
     assert_eq!(result, expected);
 }
@@ -231,4 +232,37 @@ pub fn leetcode_150_evaluate_reverse_polish_notation(){
     let result:i64=stack::evaluate_reverse_polish_notation(&temperatures);
     let expected:i64=22;
     assert_eq!(result, expected);
+}
+
+//BINARY SEARCH
+pub fn leetcode_704_binary_search(){
+    let nums:Vec<i64>=vec![-1,0,3,5,9,12];
+    let target:i64=9;
+    let result:i64=binary_search::binary_search(&nums,&target);
+    let expected:i64=4;
+    assert_eq!(result,expected);
+}
+
+pub fn leetcode_74_search_a_2d_matrix() {
+    let matrix:Vec<Vec<i64>>=vec![vec![1,3,5,7],vec![10,11,16,20],vec![23,30,34,60]];
+    let target:i64=3;
+    let result:bool=binary_search::search_a_2d_matrix(&matrix,&target);
+    let expected:bool=true;
+    assert_eq!(result,expected);
+}
+
+pub fn leetcode_875_koko_eating_bananas(){
+    let piles:Vec<i64>=vec![30,11,23,4,20];
+    let h:i64=6;
+    let result:i64=binary_search::koko_eating_bananas(&piles,&h);
+    let expected:i64=23;
+    assert_eq!(result,expected);
+}
+
+pub fn leetcode_33_search_in_rotated_sorted_array(){
+    let nums:Vec<i64>=vec![4,5,6,7,0,1,2];
+    let target:i64=0;
+    let result:i64=binary_search::search_in_rotated_sorted_array(&nums,&target);
+    let expected:i64=4;
+    assert_eq!(result,expected);
 }
