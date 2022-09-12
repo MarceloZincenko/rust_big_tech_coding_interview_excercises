@@ -41,9 +41,10 @@ fn main() {
     //Binary Search
     excercises::leetcode_33_search_in_rotated_sorted_array();
     excercises::leetcode_74_search_a_2d_matrix();
+    excercises::leetcode_153_find_minimum_in_rotated_sorted_array();
     excercises::leetcode_704_binary_search();
     excercises::leetcode_875_koko_eating_bananas();
-
+    
     //ALGORITHMS
     //binary search
     algorithms::binary_search();
