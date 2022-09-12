@@ -1,3 +1,5 @@
+use std::cmp;
+
 pub fn binary_search(nums:&Vec<i64>,target:&i64)->i64{
     
     if nums.is_empty() || target<&nums[0] || target>nums.last().unwrap(){
@@ -120,3 +122,28 @@ pub fn search_in_rotated_sorted_array(nums:&Vec<i64>,target:&i64)->i64{
 
     return -1;
 }
+
+pub fn find_minimum_in_rotated_sorted_array(nums:&Vec<i64>)->i64{
+
+    let mut l:usize=0;
+    let mut r:usize=nums.len()-1;
+    let mut mid:usize;
+    let mut res:i64=nums[0];
+        
+    while l<=r {
+        if nums[l] < nums[r]{
+            res = cmp::min(res, nums[l]);
+            break;        
+        }
+        m = (l + r)/2;
+        res = cmp::min(res, nums[m]);
+        if nums[m] >= nums[l]{
+            l = m + 1;
+        } else {
+            r = m - 1;
+        }
+    }
+
+    return res;
+}
+
