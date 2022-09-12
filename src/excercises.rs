@@ -266,3 +266,10 @@ pub fn leetcode_33_search_in_rotated_sorted_array(){
     let expected:i64=4;
     assert_eq!(result,expected);
 }
+
+pub fn leetcode_153_find_minimum_in_rotated_sorted_array(){
+    let nums:Vec<i64>=vec![3,4,5,1,2];
+    let result:i64=binary_search::find_minimum_in_rotated_sorted_array(&nums);
+    let expected:i64=1;
+    assert_eq!(result,expected);
+}
