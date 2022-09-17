@@ -14,7 +14,7 @@ fn main() {
     excercises::leetcode_347_top_k_frequent_elements();
     excercises::leetcode_3238_product_of_array_except_self();
 
-    //backtracking
+    //Permutation
     excercises::leetcode_17_letter_combination();
 
     //Two pointers
@@ -44,6 +44,12 @@ fn main() {
     excercises::leetcode_153_find_minimum_in_rotated_sorted_array();
     excercises::leetcode_704_binary_search();
     excercises::leetcode_875_koko_eating_bananas();
+
+    //Linked lists
+
+
+    //Binary trees
+    
     
     //ALGORITHMS
     //binary search

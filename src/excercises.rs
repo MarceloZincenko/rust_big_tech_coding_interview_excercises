@@ -1,5 +1,5 @@
 mod array_hashes;
-mod backtracking;
+mod permutation;
 mod two_pointers;
 mod sliding_window;
 mod stack;
@@ -100,10 +100,10 @@ pub fn leetcode_128_longest_consecutive_sequence(){
     assert_eq!(result, expected);
 }
 
-//BACKTRACKING
+//PERMUTATIONS
 pub fn leetcode_17_letter_combination(){
     let digits:String=String::from("23");
-    let result:Vec<String>=backtracking::letter_combination(&digits);
+    let result:Vec<String>=permutation::letter_combination(&digits);
     let expected:Vec<String>=vec![String::from("ad"),String::from("ae"),String::from("af"),String::from("bd"),String::from("be"),String::from("bf"),String::from("cd"),String::from("ce"),String::from("cf")];
     assert_eq!(result, expected);
 }
